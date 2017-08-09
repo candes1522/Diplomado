@@ -4,52 +4,83 @@ public class Liquidacion {
 //modelo
 
 private String LIQU_ID;
-private String DOCUMENTO;
-private String NOMBRE;
-private String COD_PROG;
-private String PROGRAMA;
-private String CATEGORIA;
-private String SITUACION;
+private String LIQU_TOTALLIQUIDADO;
+private String LIQU_TOTALDESCUENTO;
+private String LIQU_FECHAPAGO;
+private String LIQU_FECHACAMBIO;
 private String ESTP_ID;
-private String TOTAPAGAR;
-private String DESCUENTO;
-private String V_PAGADO;
+private String TIPL_ID;
 private String LIQU_ESTADO;
-private String TIPO_LIQU;
-private String MAAC_ESTADO;
+private String LIQU_SALDOAFAVOR;
+private String LIQU_REGISTRADOPOR;
+private String LIQU_SALDOENCONTRA;
+private String LIQU_REFERENCIA;
 private String PEUN_ID;
-private String PEUN_MATRICULA;
-private String SEMESTRE;
+private String UNID_ID;
+private String LIQU_NUMEROCUOTA;
+private String LIQU_NIVELLIQUIDACION;
+private String LIQU_FECHASPROPIAS;
+private String FINA_ID;
+private String LIQU_VALORPAGADO;
+private String LIQU_VALORANTICIPO;
+private String LIQU_VALORCUOTAORIGINAL;
+private String LIQU_TIPOLIQUIDACION;
+private String PSLI_ID;
+private String PRAC_ID;
+private String INLI_ID;
+private String LIQU_TIPOGENERACION;
+
 	
 	
 	public Liquidacion() {
 	
 	}
+	
 
 
-	public Liquidacion(String lIQU_ID, String dOCUMENTO, String nOMBRE, String cOD_PROG, String pROGRAMA,
-			String cATEGORIA, String sITUACION, String eSTP_ID, String tOTAPAGAR, String dESCUENTO, String v_PAGADO,
-			String lIQU_ESTADO, String tIPO_LIQU, String mAAC_ESTADO, String pEUN_ID, String pEUN_MATRICULA,
-			String sEMESTRE) {
+
+	public Liquidacion(String lIQU_ID, String lIQU_TOTALLIQUIDADO, String lIQU_TOTALDESCUENTO, String lIQU_FECHAPAGO,
+			String lIQU_FECHACAMBIO, String eSTP_ID, String tIPL_ID, String lIQU_ESTADO, String lIQU_SALDOAFAVOR,
+			String lIQU_REGISTRADOPOR, String lIQU_SALDOENCONTRA, String lIQU_REFERENCIA, String pEUN_ID,
+			String uNID_ID, String lIQU_NUMEROCUOTA, String lIQU_NIVELLIQUIDACION, String lIQU_FECHASPROPIAS,
+			String fINA_ID, String lIQU_VALORPAGADO, String lIQU_VALORANTICIPO, String lIQU_VALORCUOTAORIGINAL,
+			String lIQU_TIPOLIQUIDACION, String pSLI_ID, String pRAC_ID, String iNLI_ID, String lIQU_TIPOGENERACION
+) {
 		
 		LIQU_ID = lIQU_ID;
-		DOCUMENTO = dOCUMENTO;
-		NOMBRE = nOMBRE;
-		COD_PROG = cOD_PROG;
-		PROGRAMA = pROGRAMA;
-		CATEGORIA = cATEGORIA;
-		SITUACION = sITUACION;
+		LIQU_TOTALLIQUIDADO = lIQU_TOTALLIQUIDADO;
+		LIQU_TOTALDESCUENTO = lIQU_TOTALDESCUENTO;
+		LIQU_FECHAPAGO = lIQU_FECHAPAGO;
+		LIQU_FECHACAMBIO = lIQU_FECHACAMBIO;
 		ESTP_ID = eSTP_ID;
-		TOTAPAGAR = tOTAPAGAR;
-		DESCUENTO = dESCUENTO;
-		V_PAGADO = v_PAGADO;
+		TIPL_ID = tIPL_ID;
 		LIQU_ESTADO = lIQU_ESTADO;
-		TIPO_LIQU = tIPO_LIQU;
-		MAAC_ESTADO = mAAC_ESTADO;
+		LIQU_SALDOAFAVOR = lIQU_SALDOAFAVOR;
+		LIQU_REGISTRADOPOR = lIQU_REGISTRADOPOR;
+		LIQU_SALDOENCONTRA = lIQU_SALDOENCONTRA;
+		LIQU_REFERENCIA = lIQU_REFERENCIA;
 		PEUN_ID = pEUN_ID;
-		PEUN_MATRICULA = pEUN_MATRICULA;
-		SEMESTRE = sEMESTRE;
+		UNID_ID = uNID_ID;
+		LIQU_NUMEROCUOTA = lIQU_NUMEROCUOTA;
+		LIQU_NIVELLIQUIDACION = lIQU_NIVELLIQUIDACION;
+		LIQU_FECHASPROPIAS = lIQU_FECHASPROPIAS;
+		FINA_ID = fINA_ID;
+		LIQU_VALORPAGADO = lIQU_VALORPAGADO;
+		LIQU_VALORANTICIPO = lIQU_VALORANTICIPO;
+		LIQU_VALORCUOTAORIGINAL = lIQU_VALORCUOTAORIGINAL;
+		LIQU_TIPOLIQUIDACION = lIQU_TIPOLIQUIDACION;
+		PSLI_ID = pSLI_ID;
+		PRAC_ID = pRAC_ID;
+		INLI_ID = iNLI_ID;
+		LIQU_TIPOGENERACION=lIQU_TIPOGENERACION;
+		LIQU_TIPOGENERACION=lIQU_TIPOGENERACION;
+
+
+
+
 	}
+
+
 
 
 	public String getLIQU_ID() {
@@ -57,71 +88,59 @@ private String SEMESTRE;
 	}
 
 
+
 	public void setLIQU_ID(String lIQU_ID) {
 		LIQU_ID = lIQU_ID;
 	}
 
 
-	public String getDOCUMENTO() {
-		return DOCUMENTO;
-	}
 
-
-	public void setDOCUMENTO(String dOCUMENTO) {
-		DOCUMENTO = dOCUMENTO;
-	}
-
-
-	public String getNOMBRE() {
-		return NOMBRE;
-	}
-
-
-	public void setNOMBRE(String nOMBRE) {
-		NOMBRE = nOMBRE;
-	}
-
-
-	public String getCOD_PROG() {
-		return COD_PROG;
-	}
-
-
-	public void setCOD_PROG(String cOD_PROG) {
-		COD_PROG = cOD_PROG;
-	}
-
-
-	public String getPROGRAMA() {
-		return PROGRAMA;
-	}
-
-
-	public void setPROGRAMA(String pROGRAMA) {
-		PROGRAMA = pROGRAMA;
+	public String getLIQU_TOTALLIQUIDADO() {
+		return LIQU_TOTALLIQUIDADO;
 	}
 
 
 
-
-	public String getCATEGORIA() {
-		return CATEGORIA;
+	public void setLIQU_TOTALLIQUIDADO(String lIQU_TOTALLIQUIDADO) {
+		LIQU_TOTALLIQUIDADO = lIQU_TOTALLIQUIDADO;
 	}
 
 
-	public void setCATEGORIA(String cATEGORIA) {
-		CATEGORIA = cATEGORIA;
+
+	public String getLIQU_TOTALDESCUENTO() {
+		return LIQU_TOTALDESCUENTO;
 	}
 
 
-	public String getSITUACION() {
-		return SITUACION;
+
+	public void setLIQU_TOTALDESCUENTO(String lIQU_TOTALDESCUENTO) {
+		LIQU_TOTALDESCUENTO = lIQU_TOTALDESCUENTO;
 	}
 
 
-	public void setSITUACION(String sITUACION) {
-		SITUACION = sITUACION;
+
+	public String getLIQU_FECHAPAGO() {
+		return LIQU_FECHAPAGO;
 	}
+
+
+
+	public void setLIQU_FECHAPAGO(String lIQU_FECHAPAGO) {
+		LIQU_FECHAPAGO = lIQU_FECHAPAGO;
+	}
+
+
+
+	public String getLIQU_FECHACAMBIO() {
+		return LIQU_FECHACAMBIO;
+	}
+
+
+
+	public void setLIQU_FECHACAMBIO(String lIQU_FECHACAMBIO) {
+		LIQU_FECHACAMBIO = lIQU_FECHACAMBIO;
+	}
+
 
 
 	public String getESTP_ID() {
@@ -129,39 +148,23 @@ private String SEMESTRE;
 	}
 
 
+
 	public void setESTP_ID(String eSTP_ID) {
 		ESTP_ID = eSTP_ID;
 	}
 
 
-	public String getTOTAPAGAR() {
-		return TOTAPAGAR;
+
+	public String getTIPL_ID() {
+		return TIPL_ID;
 	}
 
 
-	public void setTOTAPAGAR(String tOTAPAGAR) {
-		TOTAPAGAR = tOTAPAGAR;
+
+	public void setTIPL_ID(String tIPL_ID) {
+		TIPL_ID = tIPL_ID;
 	}
 
-
-	public String getDESCUENTO() {
-		return DESCUENTO;
-	}
-
-
-	public void setDESCUENTO(String dESCUENTO) {
-		DESCUENTO = dESCUENTO;
-	}
-
-
-	public String getV_PAGADO() {
-		return V_PAGADO;
-	}
-
-
-	public void setV_PAGADO(String v_PAGADO) {
-		V_PAGADO = v_PAGADO;
-	}
 
 
 	public String getLIQU_ESTADO() {
@@ -169,29 +172,59 @@ private String SEMESTRE;
 	}
 
 
+
 	public void setLIQU_ESTADO(String lIQU_ESTADO) {
 		LIQU_ESTADO = lIQU_ESTADO;
 	}
 
 
-	public String getTIPO_LIQU() {
-		return TIPO_LIQU;
+
+	public String getLIQU_SALDOAFAVOR() {
+		return LIQU_SALDOAFAVOR;
 	}
 
 
-	public void setTIPO_LIQU(String tIPO_LIQU) {
-		TIPO_LIQU = tIPO_LIQU;
+
+	public void setLIQU_SALDOAFAVOR(String lIQU_SALDOAFAVOR) {
+		LIQU_SALDOAFAVOR = lIQU_SALDOAFAVOR;
 	}
 
 
-	public String getMAAC_ESTADO() {
-		return MAAC_ESTADO;
+
+	public String getLIQU_REGISTRADOPOR() {
+		return LIQU_REGISTRADOPOR;
 	}
 
 
-	public void setMAAC_ESTADO(String mAAC_ESTADO) {
-		MAAC_ESTADO = mAAC_ESTADO;
+
+	public void setLIQU_REGISTRADOPOR(String lIQU_REGISTRADOPOR) {
+		LIQU_REGISTRADOPOR = lIQU_REGISTRADOPOR;
 	}
+
+
+
+	public String getLIQU_SALDOENCONTRA() {
+		return LIQU_SALDOENCONTRA;
+	}
+
+
+
+	public void setLIQU_SALDOENCONTRA(String lIQU_SALDOENCONTRA) {
+		LIQU_SALDOENCONTRA = lIQU_SALDOENCONTRA;
+	}
+
+
+
+	public String getLIQU_REFERENCIA() {
+		return LIQU_REFERENCIA;
+	}
+
+
+
+	public void setLIQU_REFERENCIA(String lIQU_REFERENCIA) {
+		LIQU_REFERENCIA = lIQU_REFERENCIA;
+	}
+
 
 
 	public String getPEUN_ID() {
@@ -199,29 +232,168 @@ private String SEMESTRE;
 	}
 
 
+
 	public void setPEUN_ID(String pEUN_ID) {
 		PEUN_ID = pEUN_ID;
 	}
 
 
-	public String getPEUN_MATRICULA() {
-		return PEUN_MATRICULA;
+
+	public String getUNID_ID() {
+		return UNID_ID;
 	}
 
 
-	public void setPEUN_MATRICULA(String pEUN_MATRICULA) {
-		PEUN_MATRICULA = pEUN_MATRICULA;
+
+	public void setUNID_ID(String uNID_ID) {
+		UNID_ID = uNID_ID;
 	}
 
 
-	public String getSEMESTRE() {
-		return SEMESTRE;
+
+	public String getLIQU_NUMEROCUOTA() {
+		return LIQU_NUMEROCUOTA;
 	}
 
 
-	public void setSEMESTRE(String sEMESTRE) {
-		SEMESTRE = sEMESTRE;
+
+	public void setLIQU_NUMEROCUOTA(String lIQU_NUMEROCUOTA) {
+		LIQU_NUMEROCUOTA = lIQU_NUMEROCUOTA;
 	}
-		
+
+
+
+	public String getLIQU_NIVELLIQUIDACION() {
+		return LIQU_NIVELLIQUIDACION;
+	}
+
+
+
+	public void setLIQU_NIVELLIQUIDACION(String lIQU_NIVELLIQUIDACION) {
+		LIQU_NIVELLIQUIDACION = lIQU_NIVELLIQUIDACION;
+	}
+
+
+
+	public String getLIQU_FECHASPROPIAS() {
+		return LIQU_FECHASPROPIAS;
+	}
+
+
+
+	public void setLIQU_FECHASPROPIAS(String lIQU_FECHASPROPIAS) {
+		LIQU_FECHASPROPIAS = lIQU_FECHASPROPIAS;
+	}
+
+
+
+	public String getFINA_ID() {
+		return FINA_ID;
+	}
+
+
+
+	public void setFINA_ID(String fINA_ID) {
+		FINA_ID = fINA_ID;
+	}
+
+
+
+	public String getLIQU_VALORPAGADO() {
+		return LIQU_VALORPAGADO;
+	}
+
+
+
+	public void setLIQU_VALORPAGADO(String lIQU_VALORPAGADO) {
+		LIQU_VALORPAGADO = lIQU_VALORPAGADO;
+	}
+
+
+
+	public String getLIQU_VALORANTICIPO() {
+		return LIQU_VALORANTICIPO;
+	}
+
+
+
+	public void setLIQU_VALORANTICIPO(String lIQU_VALORANTICIPO) {
+		LIQU_VALORANTICIPO = lIQU_VALORANTICIPO;
+	}
+
+
+
+	public String getLIQU_VALORCUOTAORIGINAL() {
+		return LIQU_VALORCUOTAORIGINAL;
+	}
+
+
+
+	public void setLIQU_VALORCUOTAORIGINAL(String lIQU_VALORCUOTAORIGINAL) {
+		LIQU_VALORCUOTAORIGINAL = lIQU_VALORCUOTAORIGINAL;
+	}
+
+
+
+	public String getLIQU_TIPOLIQUIDACION() {
+		return LIQU_TIPOLIQUIDACION;
+	}
+
+
+
+	public void setLIQU_TIPOLIQUIDACION(String lIQU_TIPOLIQUIDACION) {
+		LIQU_TIPOLIQUIDACION = lIQU_TIPOLIQUIDACION;
+	}
+
+
+
+	public String getPSLI_ID() {
+		return PSLI_ID;
+	}
+
+
+
+	public void setPSLI_ID(String pSLI_ID) {
+		PSLI_ID = pSLI_ID;
+	}
+
+
+
+	public String getPRAC_ID() {
+		return PRAC_ID;
+	}
+
+
+
+	public void setPRAC_ID(String pRAC_ID) {
+		PRAC_ID = pRAC_ID;
+	}
+
+
+
+	public String getINLI_ID() {
+		return INLI_ID;
+	}
+
+
+
+	public void setINLI_ID(String iNLI_ID) {
+		INLI_ID = iNLI_ID;
+	}
+
+
+
+
+	public String getLIQU_TIPOGENERACION() {
+		return LIQU_TIPOGENERACION;
+	}
+
+
+
+
+	public void setLIQU_TIPOGENERACION(String lIQU_TIPOGENERACION) {
+		LIQU_TIPOGENERACION = lIQU_TIPOGENERACION;
+	}
+
 
 }
